@@ -67,6 +67,12 @@ namespace FolderComparer2
 }
 ```
 
+## Screenshot from the executable german:
+![Screenshot from the executable german](https://github.com/SeppPenner/FolderComparer2/blob/master/Screenshot_2.PNG "Screenshot from the executable german")
+
+## Screenshot from the executable english:
+![Screenshot from the executable english](https://github.com/SeppPenner/FolderComparer2/blob/master/Screenshot_1.PNG "Screenshot from the executable english")
+
 Change history
 --------------
 
