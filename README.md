@@ -1,9 +1,10 @@
 FolderComparer2 and RecursiveFolderComparation
 ==============================================
 
-FolderComparer2 is a software to compare folders according to their size, files and subfolders.
+FolderComparer2 is a software/library to compare folders according to their size, files and subfolders.
+Both are written and tested in .Net 4.6.2.
 
-RecursiveFolderComparation is a kind of 'library' on how to compare folders in C#
+[![Build status](https://ci.appveyor.com/api/projects/status/6qqhjk6pia7nvn67?svg=true)](https://ci.appveyor.com/project/SeppPenner/foldercomparer2)
 
 ## Basic usage:
 ```csharp
@@ -69,5 +70,6 @@ namespace FolderComparer2
 Change history
 --------------
 
-* **Version 1.0.0 (2016-12-03)** : Added basic usage to Readme.
-* **Version 1.0.0 (2016-08-13)** : 1.0 release.
+* **Version 2.0.0.1 (2017-03-11)** : Switched to .Net 4.6.2, refactored code.
+* **Version 2.0.0.0 (2016-12-03)** : Added basic usage to Readme.
+* **Version 2.0.0.0 (2016-08-13)** : 1.0 release.
