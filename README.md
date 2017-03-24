@@ -76,6 +76,7 @@ namespace FolderComparer2
 Change history
 --------------
 
+* **Version 2.0.0.3 (2017-03-24)** : Updated Languages.dll to version 1.0.0.4.
 * **Version 2.0.0.2 (2017-03-21)** : Updated Languages.dll.
 * **Version 2.0.0.1 (2017-03-11)** : Switched to .Net 4.6.2, refactored code.
 * **Version 2.0.0.0 (2016-12-03)** : Added basic usage to Readme.
