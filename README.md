@@ -2,7 +2,7 @@ FolderComparer2
 ===============
 
 FolderComparer2 is a software/library to compare folders according to their size, files and subfolders.
-Both are written and tested in .Net 4.6.2.
+Both are written and tested in .Net 4.7.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/6qqhjk6pia7nvn67?svg=true)](https://ci.appveyor.com/project/SeppPenner/foldercomparer2)
 

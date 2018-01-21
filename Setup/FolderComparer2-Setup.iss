@@ -6,6 +6,7 @@
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "FolderComparer2.exe"
+#define MyPath "F:\TODO\C# und VB\FolderComparer2"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -25,10 +26,10 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=C:\Users\tim\Desktop\FolderComparer2\FolderComparer2\bin\Debug\License.txt
-OutputDir=C:\Users\tim\Desktop\FolderComparer2\Setup
+LicenseFile={#MyPath}\FolderComparer2\bin\Debug\License.txt
+OutputDir={#MyPath}\Setup
 OutputBaseFilename=FolderComparer2-Setup
-SetupIconFile=C:\Users\tim\Desktop\FolderComparer2\FolderComparer2\FolderComparer2.ico
+SetupIconFile={#MyPath}\FolderComparer2\FolderComparer2.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -41,10 +42,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\tim\Desktop\FolderComparer2\FolderComparer2\bin\Debug\FolderComparer2.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\FolderComparer2\FolderComparer2\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\FolderComparer2\FolderComparer2\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\FolderComparer2\FolderComparer2\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MyPath}\FolderComparer2\bin\Debug\FolderComparer2.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\FolderComparer2\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\FolderComparer2\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\FolderComparer2\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
