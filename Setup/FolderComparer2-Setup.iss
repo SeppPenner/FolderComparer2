@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "FolderComparer2"
-#define MyAppVersion "2.0.0.3"
+#define MyAppVersion "2.0.0.4"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "FolderComparer2.exe"
-#define MyPath "F:\TODO\C# und VB\FolderComparer2"
+#define MyPath "C:\Users\tim\Desktop\Updaten_Snyk\FolderComparer2"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.

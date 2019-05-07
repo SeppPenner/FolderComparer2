@@ -2,9 +2,14 @@ FolderComparer2
 ===============
 
 FolderComparer2 is a software/library to compare folders according to their size, files and subfolders.
-Both are written and tested in .Net 4.7.
+Both are written and tested in .Net 4.8.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/6qqhjk6pia7nvn67?svg=true)](https://ci.appveyor.com/project/SeppPenner/foldercomparer2)
+[![GitHub issues](https://img.shields.io/github/issues/SeppPenner/FolderComparer2.svg)](https://github.com/SeppPenner/FolderComparer2/issues)
+[![GitHub forks](https://img.shields.io/github/forks/SeppPenner/FolderComparer2.svg)](https://github.com/SeppPenner/FolderComparer2/network)
+[![GitHub stars](https://img.shields.io/github/stars/SeppPenner/FolderComparer2.svg)](https://github.com/SeppPenner/FolderComparer2/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/FolderComparer2/master/License.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/FolderComparer2/badge.svg)](https://snyk.io/test/github/SeppPenner/FolderComparer2)
 
 ## Basic usage:
 ```csharp
@@ -76,6 +81,7 @@ namespace FolderComparer2
 Change history
 --------------
 
+* **Version 2.0.0.4 (2019-05-07)** : Updated .Net version to 4.8.
 * **Version 2.0.0.3 (2017-03-24)** : Updated Languages.dll to version 1.0.0.4.
 * **Version 2.0.0.2 (2017-03-21)** : Updated Languages.dll.
 * **Version 2.0.0.1 (2017-03-11)** : Switched to .Net 4.6.2, refactored code.
