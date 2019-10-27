@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "FolderComparer2"
-#define MyAppVersion "2.0.0.4"
+#define MyAppVersion "2.0.1.0"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "FolderComparer2.exe"
-#define MyPath "C:\Users\tim\Desktop\Updaten_Snyk\FolderComparer2"
+#define MyPath "C:\Users\Tim\Documents\Git\C# und VB\FolderComparer2"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -23,10 +23,10 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={commonpf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile={#MyPath}\FolderComparer2\bin\Debug\License.txt
+LicenseFile={#MyPath}\FolderComparer2\bin\Release\License.txt
 OutputDir={#MyPath}\Setup
 OutputBaseFilename=FolderComparer2-Setup
 SetupIconFile={#MyPath}\FolderComparer2\FolderComparer2.ico
@@ -42,10 +42,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "{#MyPath}\FolderComparer2\bin\Debug\FolderComparer2.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\FolderComparer2\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\FolderComparer2\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\FolderComparer2\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MyPath}\FolderComparer2\bin\Release\FolderComparer2.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\FolderComparer2\bin\Release\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\FolderComparer2\bin\Release\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\FolderComparer2\bin\Release\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
