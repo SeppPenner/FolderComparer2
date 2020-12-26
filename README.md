@@ -2,7 +2,7 @@ FolderComparer2
 ===============
 
 FolderComparer2 is a software/library to compare folders according to their size, files and subfolders.
-Both are written and tested in .Net 4.8.
+Both are written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/6qqhjk6pia7nvn67?svg=true)](https://ci.appveyor.com/project/SeppPenner/foldercomparer2)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/FolderComparer2.svg)](https://github.com/SeppPenner/FolderComparer2/issues)
@@ -52,6 +52,7 @@ namespace FolderComparer2
             {
                 RaiseFileCount(directory, compare);
                 RaiseSubFolderCount(directory, compare);
+                
                 foreach (string file in Directory.EnumerateFiles(directory))
                 {
                     RaiseBytes(file, compare);
@@ -81,10 +82,4 @@ namespace FolderComparer2
 Change history
 --------------
 
-* **Version 2.0.1.0 (2019-10-27)** : Updated nuget packages, added GitVersionTask.
-* **Version 2.0.0.4 (2019-05-07)** : Updated .Net version to 4.8.
-* **Version 2.0.0.3 (2017-03-24)** : Updated Languages.dll to version 1.0.0.4.
-* **Version 2.0.0.2 (2017-03-21)** : Updated Languages.dll.
-* **Version 2.0.0.1 (2017-03-11)** : Switched to .Net 4.6.2, refactored code.
-* **Version 2.0.0.0 (2016-12-03)** : Added basic usage to Readme.
-* **Version 2.0.0.0 (2016-08-13)** : 1.0 release.
+See the [Changelog](https://github.com/SeppPenner/FolderComparer2/blob/master/Changelog.md).

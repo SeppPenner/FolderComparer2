@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Identifier>de-DE</Identifier> <!--According to https://msdn.microsoft.com/de-de/library/ee825488(v=cs.20).aspx-->
+	<Name>Deutsch</Name>
+	<Words>
+		<Word>
+			<Key>SelectFolder1</Key>
+			<Value>Ordner 1 wählen</Value>
+		</Word>
+		<Word>
+			<Key>SelectFolder2</Key>
+			<Value>Ordner 2 wählen</Value>
+		</Word>
+		<Word>
+			<Key>CompareFolders</Key>
+			<Value>Ordner vergleichen</Value>
+		</Word>
+		<Word>
+			<Key>FileSize</Key>
+			<Value>Größe:</Value>
+		</Word>
+		<Word>
+			<Key>FileCount</Key>
+			<Value>Dateien:</Value>
+		</Word>
+		<Word>
+			<Key>SubFolderCount</Key>
+			<Value>Unterordner:</Value>
+		</Word>
+		<Word>
+			<Key>Folder1</Key>
+			<Value>Ordner 1:</Value>
+		</Word>
+		<Word>
+			<Key>Folder2</Key>
+			<Value>Ordner 2:</Value>
+		</Word>
+		<Word>
+			<Key>Folder1NotSelectedCaption</Key>
+			<Value>Ordner 1 nicht ausgewählt</Value>
+		</Word>
+		<Word>
+			<Key>Folder1NotSelectedText</Key>
+			<Value>Ordner 1 wurde nicht ausgewählt!</Value>
+		</Word>
+		<Word>
+			<Key>Folder2NotSelectedCaption</Key>
+			<Value>Ordner 2 nicht ausgewählt</Value>
+		</Word>
+		<Word>
+			<Key>Folder2NotSelectedText</Key>
+			<Value>Ordner 2 wurde nicht ausgewählt!</Value>
+		</Word>
+	</Words>
+</Language>
