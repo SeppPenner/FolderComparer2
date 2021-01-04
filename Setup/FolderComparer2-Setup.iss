@@ -42,6 +42,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 
 [Files]
 Source: "..\src\FolderComparer2\bin\Release\net5.0-windows\FolderComparer2.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\FolderComparer2\bin\Release\net5.0-windows\FolderComparer2.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\FolderComparer2\bin\Release\net5.0-windows\License.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\FolderComparer2\bin\Release\net5.0-windows\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\FolderComparer2\bin\Release\net5.0-windows\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
