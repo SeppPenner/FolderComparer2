@@ -473,7 +473,10 @@ namespace FolderComparer2.Forms
         /// <param name="e">The event args.</param>
         private void EvaluateResult(object sender, RunWorkerCompletedEventArgs e)
         {
-            this.Evaluate((CompareObject)e.Result);
+            if (e.Result is CompareObject compareObject)
+            {
+                this.Evaluate(compareObject);
+            }
         }
 
         /// <summary>
