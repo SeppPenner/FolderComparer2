@@ -114,7 +114,6 @@ namespace FolderComparer2.Implementation
         /// </summary>
         /// <param name="compare">The compare object.</param>
         /// <returns>A value indicating whether the byte size could be evaluated to a higher data unit or not.</returns>
-        [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "Reviewed. Suppression is OK here.")]
         private static bool EvaluateTb(CompareObject compare)
         {
             if (compare.Size < 1024)
@@ -149,8 +148,6 @@ namespace FolderComparer2.Implementation
         /// </summary>
         /// <param name="compare">The compare object.</param>
         /// <returns>A value indicating whether the byte size could be evaluated to a higher data unit or not.</returns>
-        [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "Reviewed. Suppression is OK here.")]
-        // ReSharper disable once UnusedMethodReturnValue.Local
         private static bool EvaluateEb(CompareObject compare)
         {
             if (compare.Size < 1024)

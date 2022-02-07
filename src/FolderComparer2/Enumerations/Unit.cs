@@ -9,8 +9,6 @@
 
 namespace FolderComparer2.Enumerations
 {
-    using System.Diagnostics.CodeAnalysis;
-
     /// <summary>
     /// The unit enumeration.
     /// </summary>
@@ -41,7 +39,6 @@ namespace FolderComparer2.Enumerations
         /// <summary>
         /// The terrabyte unit.
         /// </summary>
-        [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "Reviewed. Suppression is OK here.")]
         Tb,
 
         /// <summary>
