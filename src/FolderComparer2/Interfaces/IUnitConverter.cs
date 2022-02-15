@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="IUnitConverter.cs" company="Hämmer Electronics">
 //   Copyright (c) All rights reserved.
 // </copyright>
@@ -7,19 +7,16 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace FolderComparer2.Interfaces
-{
-    using FolderComparer2.Models;
+namespace FolderComparer2.Interfaces;
 
+/// <summary>
+/// The unit converter interface.
+/// </summary>
+public interface IUnitConverter
+{
     /// <summary>
-    /// The unit converter interface.
+    /// Evaluates the byte size.
     /// </summary>
-    public interface IUnitConverter
-    {
-        /// <summary>
-        /// Evaluates the byte size.
-        /// </summary>
-        /// <param name="compare">The compare object.</param>
-        void EvaluateByteSize(CompareObject compare);
-    }
+    /// <param name="compare">The compare object.</param>
+    void EvaluateByteSize(CompareObject compare);
 }

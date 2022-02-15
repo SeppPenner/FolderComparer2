@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Unit.cs" company="Hämmer Electronics">
 //   Copyright (c) All rights reserved.
 // </copyright>
@@ -7,48 +7,45 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace FolderComparer2.Enumerations
+namespace FolderComparer2.Enumerations;
+
+/// <summary>
+/// The unit enumeration.
+/// </summary>
+public enum Unit
 {
     /// <summary>
-    /// The unit enumeration.
+    /// The byte unit.
     /// </summary>
-    public enum Unit
-    {
-        /// <summary>
-        /// The byte unit.
-        /// </summary>
-        // ReSharper disable once UnusedMember.Global
-        B,
+    B,
 
-        /// <summary>
-        /// The kilobyte unit.
-        /// </summary>
-        // ReSharper disable once InconsistentNaming
-        KB,
+    /// <summary>
+    /// The kilobyte unit.
+    /// </summary>
+    KB,
 
-        /// <summary>
-        /// The megabyte unit.
-        /// </summary>
-        Mb,
+    /// <summary>
+    /// The megabyte unit.
+    /// </summary>
+    Mb,
 
-        /// <summary>
-        /// The gigabyte unit.
-        /// </summary>
-        Gb,
+    /// <summary>
+    /// The gigabyte unit.
+    /// </summary>
+    Gb,
 
-        /// <summary>
-        /// The terrabyte unit.
-        /// </summary>
-        Tb,
+    /// <summary>
+    /// The terrabyte unit.
+    /// </summary>
+    Tb,
 
-        /// <summary>
-        /// The petabyte unit.
-        /// </summary>
-        Pb,
+    /// <summary>
+    /// The petabyte unit.
+    /// </summary>
+    Pb,
 
-        /// <summary>
-        /// The exabyte unit.
-        /// </summary>
-        Eb
-    }
+    /// <summary>
+    /// The exabyte unit.
+    /// </summary>
+    Eb
 }
