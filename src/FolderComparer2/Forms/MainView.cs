@@ -125,10 +125,10 @@ public partial class MainView : Form
     /// </summary>
     private void InitializeBackgroundWorkers()
     {
-        this.worker1.DoWork += this.SearchDirectoryBackground;
-        this.worker2.DoWork += this.SearchDirectoryBackground;
-        this.worker1.RunWorkerCompleted += this.EvaluateResult;
-        this.worker2.RunWorkerCompleted += this.EvaluateResult;
+        this.worker1.DoWork += this.SearchDirectoryBackground!;
+        this.worker2.DoWork += this.SearchDirectoryBackground!;
+        this.worker1.RunWorkerCompleted += this.EvaluateResult!;
+        this.worker2.RunWorkerCompleted += this.EvaluateResult!;
     }
 
     /// <summary>
@@ -137,7 +137,7 @@ public partial class MainView : Form
     private void InitializeTimer()
     {
         this.timer.Interval = 500;
-        this.timer.Elapsed += this.EvaluateColoringTimer;
+        this.timer.Elapsed += this.EvaluateColoringTimer!;
         this.timer.Start();
     }
 
@@ -540,7 +540,7 @@ public partial class MainView : Form
     private void InitializeLanguageManager()
     {
         this.languageManager.SetCurrentLanguage("de-DE");
-        this.languageManager.OnLanguageChanged += this.OnLanguageChanged;
+        this.languageManager.OnLanguageChanged += this.OnLanguageChanged!;
     }
 
     /// <summary>
