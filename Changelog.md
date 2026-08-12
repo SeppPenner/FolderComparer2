@@ -1,5 +1,6 @@
 # Change history
 
+* **Version 2.0.8.0 (2026-08-12)** : Updated NuGet packages, moved to Net 10.0, added a test project, published the setup content self contained, fixed the swapped text and title in the error message box, fixed the encoding of the setup script.
 * **Version 2.0.7.0 (2025-01-07)** : Updated Nuget packages, added audit mode, moved to Net9.0.
 * **Version 2.0.6.0 (2024-01-03)** : Updated nuget packages, moved to Net 8.0.
 * **Version 2.0.5.0 (2022-11-21)** : Updated nuget packages, moved to Net 7.0.
