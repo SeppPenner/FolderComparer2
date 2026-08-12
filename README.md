@@ -67,8 +67,8 @@ namespace FolderComparer2
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message + ex.StackTrace, ex.Message,
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message + Environment.NewLine + Environment.NewLine + ex.StackTrace,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

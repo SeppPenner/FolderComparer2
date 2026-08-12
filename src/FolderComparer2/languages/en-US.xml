@@ -49,7 +49,11 @@
 		</Word>
 		<Word>
 			<Key>Folder2NotSelectedText</Key>
-			<Value>Ordner 2 is not selected!</Value>
+			<Value>Folder 2 is not selected!</Value>
+		</Word>
+		<Word>
+			<Key>ErrorTitle</Key>
+			<Value>Error</Value>
 		</Word>
 	</Words>
 </Language>

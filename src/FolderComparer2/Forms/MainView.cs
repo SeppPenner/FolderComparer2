@@ -153,8 +153,11 @@ public partial class MainView : Form
             return;
         }
 
-        this.EvaluateColoring();
-        this.UiThreadInvoke(() => { this.LockGui(false); });
+        this.UiThreadInvoke(() =>
+        {
+            this.EvaluateColoring();
+            this.LockGui(false);
+        });
     }
 
     /// <summary>
@@ -444,7 +447,9 @@ public partial class MainView : Form
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message + ex.StackTrace, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            var title = this.languageManager.GetCurrentLanguage().GetWord("ErrorTitle");
+            var text = $"{ex.Message}{Environment.NewLine}{Environment.NewLine}{ex.StackTrace}";
+            MessageBox.Show(text, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 

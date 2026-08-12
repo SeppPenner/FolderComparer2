@@ -51,5 +51,9 @@
 			<Key>Folder2NotSelectedText</Key>
 			<Value>Ordner 2 wurde nicht ausgewählt!</Value>
 		</Word>
+		<Word>
+			<Key>ErrorTitle</Key>
+			<Value>Fehler</Value>
+		</Word>
 	</Words>
 </Language>
