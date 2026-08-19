@@ -134,9 +134,10 @@ Do not silently "clean up" these, they are existing behaviour:
 - **`GetWord` returns `null` for an unknown key** and does not fall back to the other language, so
   every new key has to be added to `de-DE.xml` **and** `en-US.xml`. The language files are UTF-8
   without BOM, use tabs and CRLF, keep that when editing them.
-- **The installer is tracked although `.gitignore` excludes `*.exe`.**
-  `Setup/FolderComparer2-Setup.exe` needs `git add -f`. Since 2.0.8.0 the publish is self contained,
-  so the installer is around 35 MB and every release adds that to the history for good.
+- **The installer is not tracked, it hangs on the release.** `Setup/FolderComparer2-Setup.exe` needed
+  `git add -f` up to and including 2.0.8. Since 2.0.8.0 the publish is self contained, so the
+  installer is around 35 MB, and every committed copy of it stays in the history for good. Do not add
+  it back.
 - **Two copies of the icon and the license.** `src/FolderComparer2.ico` and
   `src/FolderComparer2/FolderComparer2.ico` are byte identical, as are the root `License.txt` and
   `src/FolderComparer2/License.txt`. The `.csproj` and the `.iss` both use the copies inside the
@@ -162,12 +163,30 @@ Do not silently "clean up" these, they are existing behaviour:
 6. **Then** build the installer, in this order: `Setup/build-setup-files.bat`, afterwards
    `ISCC.exe Setup/FolderComparer2-Setup.iss`. The tag has to exist first, otherwise GitVersion
    burns a prerelease version such as `2.0.8-1+Branch.master.Sha...` into the shipped executable.
-7. `git add -f Setup/FolderComparer2-Setup.exe` and commit it as `Updated setup.`.
-8. Push the commits and the tag.
+7. Push the commits and the tag.
+8. Attach `Setup/FolderComparer2-Setup.exe` to the GitHub release of that tag. **Never commit the
+   installer.** `Setup/` is the `OutputDir` of the Inno Setup script, so the file lands there during
+   the build and `.gitignore` covers it afterwards.
 
 The version in the `Changelog.md` has four parts (`2.0.8.0`), the tag has three (`2.0.8`).
 GitVersion turns the tag into the assembly version. There is no package to push, so the release ends
-with the push.
+with the asset upload.
+
+For step 8 there is no `gh` on this machine. The GitHub API does the job, with the token that
+`git push` already uses, so nothing has to be stored anywhere:
+
+```bash
+c=$(printf "protocol=https\nhost=github.com\n\n" | git credential fill)
+tok=$(printf "%s" "$c" | grep '^password=' | cut -d= -f2-)
+id=$(curl -s -X POST -H "Authorization: Bearer $tok" \
+  https://api.github.com/repos/SeppPenner/FolderComparer2/releases \
+  -d '{"tag_name":"2.0.9","name":"2.0.9"}' | grep -m1 '"id"' | tr -dc 0-9)
+curl -s -X POST -H "Authorization: Bearer $tok" -H "Content-Type: application/octet-stream" \
+  --data-binary @Setup/FolderComparer2-Setup.exe \
+  "https://uploads.github.com/repos/SeppPenner/FolderComparer2/releases/$id/assets?name=FolderComparer2-Setup.exe"
+```
+
+Never print that token, and never write it into a file.
 
 ## Git
 
